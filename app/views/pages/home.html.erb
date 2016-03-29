@@ -1,0 +1,207 @@
+<!--main page-->
+  
+  <div class="mainPage">
+  
+  <%= render 'layouts/header' %>
+  
+  
+  <!--Banner Section-->
+  	<div class="hero">
+  		<p>Running a Business is Hard, Funding it Should be EASY!</p>
+  	</div>
+  	
+  	<div class="banner container">
+ 	
+  	<div class="row">
+  	<div class="col-md-4 col-md-offset-8">
+  	<div class="sidebar">
+  		<form>
+  			<h3>Find out what your business qualifies for in just seconds</h3><br>
+  				<div class="form-group">
+    				<label for="exampleInputEmail1">How much would you like to borrow?</label>
+    				<select class="form-control">
+  						<option>$10,000-$25,000</option>
+  						<option>$25,000-$50,000</option>
+  						<option>$50,000-75,000</option>
+  						<option>$75,000-$100,000</option>
+  						<option>$100,000-$500,000</option>
+  						<option>$500,000-$1,000,000</option>
+					</select>
+  				</div>
+  				<div class="form-group">
+    				<label for="">How soon do you need the money?</label>
+    				<select class="form-control">
+  						<option>Immediately</option>
+  						<option>1 week</option>
+  						<option>Next 30 days</option>
+  						<option>Over 30 days</option>
+					</select>
+  				</div>
+  				<div class="form-group">
+    				<label for="buslength">How old is your business?</label>
+    				<select class="form-control">
+  						<option>Less than 1 year</option>
+  						<option>1-5 years</option>
+  						<option>6-10 years</option>
+  						<option>10+ years</option>
+					</select>
+  				</div>
+  				<div class="form-group">
+    				<label for="exampleInputEmail1">What is your approx. yearly revenue?</label>
+    				<select class="form-control">
+  						<option>Less than $100,000</option>
+  						<option>$100,000-$250,000</option>
+  						<option>$250,000-$500,000</option>
+  						<option>$500,000-$1,000,000</option>
+  						<option>$1,000,000+</option>
+					</select>
+  				</div>
+  	
+  				<%= link_to '<button type="button" class="btn btn-lg btn-block">Do I Qualify?</button>'.html_safe, new_application_path %>
+  
+  		</form> 
+  		</div><!--close col-->
+  		</div><!--close row-->
+  		</div>
+  	</div><!--close banner-->
+  
+  <!--Better Way-->
+  
+  <div class="betterway container">
+  	<h2>A New and Better Way to Fund Your Business</h2>
+  	<div class="row">
+  		<div class="betterbox col-md-4">
+  		  <%= image_tag("step-1.png", size: "120") %>
+  			<h4>Fast & Simple Application</h4>
+  			<p>The application is simple and only takes a couple minutes.  Our dedicated funding specialists are standing by to help.</p>
+  		</div>
+  		<div class="betterbox col-md-4">
+  		  <%= image_tag("step-2.png", size: "120") %>
+  			<h4>Revenue Based Funding</h4>
+  			<p>Once approved, you are eligible to receive up to 1.25x your average monthly revenue. It's that simple! </p>
+  		</div>
+  		<div class="betterbox col-md-4">
+  		  <%= image_tag("step-3.png", size: "120") %>
+  			<h4>Grow Your Business</h4>
+  			<p>Use the funds to...expand your business, buy new equipment, buyout a partner, pay bills, or any other business use.</p>
+  		</div>
+  	
+  	</div>
+  </div>
+  
+  
+  <!--
+  	<div class="process container">
+  	<div class="row">
+  	<div class="col-md-6">
+  		<video width="400" height="300" src="https://youtu.be/BWew-quWisU" frameborder="0"></video>
+  	</div>
+  	<div class="col-md-6">
+  	<h2>See Our Simple Process...</h2>
+  	<ul>
+  	<li><span class="fa fa-check-square-o">&nbsp;&nbsp;Most deals approved & funded with 72 hours</span></li>
+  	<li><span class="fa fa-check-square-o">&nbsp;&nbsp;Most businesses qualify</span></li>
+  	<li><span class="fa fa-check-square-o">&nbsp;&nbsp;No application fees or appraisals needed</span></li>
+  	<li><span class="fa fa-check-square-o">&nbsp;&nbsp;Payoff tax liens or buyout a partner</span></li>
+  	<li><span class="fa fa-check-square-o">&nbsp;&nbsp;Bad credit is OK</span></li>
+  	</ul>
+  	</div>
+  	 	
+  	</div>
+  	</div>
+  -->
+  <!--peerpoint nation-->
+  
+  <div class="nation">
+    <h2>Join the <span class="nationbrand">PeerPoint</span> Nation</h2>
+    <p class="nationhero">We are on a Campaign to fund 100 small businesses in the next 100 days.  We will feature each as a case study in upcoming blogs.  Please help us get the word out and recommend your favorite small business!</p>
+    <%= image_tag("PPC_hashtag.jpg", size: "100%") %>
+    
+  </div>
+  <!--CTA 1-->
+  
+  	<div class="cta1 container">
+  	<h2>Working Capital at your Fingertips</h2>
+  	<p class="cta1hero">The world's fastest and easiest way to get financing to grow your business.  PeerPoint Advance is A-Rated by the Better Business Bureau and has more satisfied small business clients than anyone in the industry!<p>
+  		<%= link_to '<button type="button" class="btn btn-lg">APPLY NOW</button>'.html_safe, new_application_path %>
+  	</div><!--close cta1-->
+  
+  <!--Testimonial-->
+  	<div class="test container">
+  	<h2>Trusted by Hundreds of Small Business Owners</h2>
+  	<p class="test1">PeerPoint Advance has funded over $50 million to help local businesses achieve their goals.  PeerPoint Advance is the industry leader in providing business solutions and working capitial online, but don't take our word for it.  Listen to some of our clients tell their stories. </p><br>
+  	
+  	<div class="row ">
+  		<div class="col-md-6"><!--left col-->
+  		  <div class="col-md-4">
+  		    <%= image_tag("ching hua.jpg", size: "180x120") %> 
+  		  </div>
+  		  <div class="col-md-8">
+  		    <p class="company">Ching Hua Chinese Restaurant</p>
+  		    <p class="testtext">Suburban family owned restaurant needed money fast for emergency repairs.  With funds provided in 4 days their diners can now stay cool on hot summer nights.<p>
+  		  </div>
+  		</div><!--end left col-->
+  		
+  		<div class="col-md-6"><!--right col-->
+  		  <div class="col-md-4">
+  		    <%= image_tag("joyce.jpeg", size: "180x120") %> 
+  		  </div>
+  		  <div class="col-md-8">
+  		    <p class="company">Joyce Family Wellness Center</p>
+  		    <p class="testtext">Growing doctor's office needed marketing funds to get the word out.  With quick & easy funding, he is now on his way to becoming a household name in the community.<p>
+  		  </div>
+  		</div>
+  	</div><!--end row--><br><br>
+  	
+  	<div class="row">
+  		<div class="col-md-6"><!--left col-->
+  		  
+  		  <div class="col-md-4">
+  		    <%= image_tag("rub.jpg", size: "180x120") %>
+  		  </div>  
+  		  <div class="col-md-8">  
+  		    <p class="company">Rub's BBQ Smokehouse</p>
+  		    <p class="testtext">When you make the best BBQ in town its only natural you expand. Having a great funding partner makes this process simple.<p>
+  		  </div>
+  		  </div>
+  		  
+  		<div class="col-md-6"><!--right col-->
+  		  <div class="col-md-4">
+  		    <%= image_tag("bj.jpg", size: "180x120") %> 
+  		  </div>
+  		  <div class="col-md-8">
+  		    <p class="company">BJ's Beauty Supply</p>
+  		    <p class="testtext">When the city's only African-Amercian owned beauty supply retailer needed working capital to increase inventory, we made sure her accounts were looking pretty.<p>
+  		  </div>
+  	</div>
+  	</div><!--end row-->
+  	<br>
+  		<p class="success"><span class="fa fa-chevron-circle-right arrow"></span><%= link_to 'See How Your Company Can Be the Next Success Story!', new_application_path %><span class="fa fa-chevron-circle-left arrow"></span></p>
+  	
+  </div><!--close container-->
+  
+  <!--CTA 3-->
+  	<div class="cta3">
+  		<h2>Seriously...let's get you funded</h2>
+  		<p>Have we worn you down yet? If you have made it this far on the page you obviously need our help.  The process is fast and there is a good chance your business will be approved.  Complete this quick form and we'll be able to give you an idea of what we can do to help you.</p>
+  		<form>
+  			<div class="form-group">
+    			<input type="text" class="form-control" id="FullName" placeholder="Full Name">
+  			</div>
+  			<div class="form-group">
+    			<input type="email" class="form-control" id="Email1" placeholder="Email">
+  			</div>
+  			<div class="form-group">
+    			<input type="phone" class="form-control" id="Phone" placeholder="Phone">
+  			</div>
+  			<%= link_to '<button type="button" class="btn btn-warning btn-lg">APPLY NOW</button>'.html_safe, new_application_path %>
+		</form>
+  
+  	</div><!--close process-->
+  	
+  <%= render 'layouts/footer' %>
+  
+  
+  
+  </div><!--close mainPage-->
+  

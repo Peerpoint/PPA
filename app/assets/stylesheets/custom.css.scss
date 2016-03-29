@@ -1,0 +1,336 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+     margin: 0;
+     padding: 0;
+}
+ .navbar {
+  		border-radius: 0;
+  		padding-top: 10px;
+  		padding-bottom: 10px;
+  		}
+  
+  nav li {
+  		font-size: 1.5em;
+  		
+  }
+  nav li .fa {
+  		color: #39b44a;
+  }
+  
+  nav button {
+  		margin-top: 8px;
+  		background-color: #ED4913;
+  		color: #fff;
+  		border-radius: 0;
+  }
+  
+  .hero {
+  		background-color: #156EBE;
+  		color: #fff; 
+  		text-align: center; 
+  		font-size: 1.9em;
+  		margin-top: -20px;
+  		padding: 15px 0 5px;
+  		}
+  
+  .sidebar {
+  			background-color: rgba(0,0,0,.6);
+  			padding: 8% 5%;
+  			color: #fff;
+  }
+  .sidebar button {
+  			background-color: #ED4913;
+  			color: #fff;
+  }
+  
+  
+  .process {background-color: #f1f1f1; width: 100%; margin: 20px 0;}
+  
+  .cta1 {
+  		text-align: center;
+  		width: 100%;
+  		background-color: #156EBE;
+  		color: #fff;
+  		padding: 10px 40px;
+  		margin-top: -20px;
+  		}
+  
+  .cta2 {text-align: center;}
+  
+  .cta3 {
+  		text-align: center;
+  		background-color: #f1f1f1;
+  		padding: 5% 0;
+  		}
+  .cta3 p {
+  		padding:0 25%;
+  		font-size: 1.3em;
+  		}
+  .cta3 form { padding: 0 30%;}
+  
+  .cta3 button {
+      background-color: #ED4913;
+  		color: #fff;
+  	
+  }
+  
+  .social {
+  		padding-top: 10px;
+  		padding-bottom: 10px;
+  		background-color:  #000; 
+  		color: #fff; 
+  		text-align: center; 
+  }
+  .social h3 {
+    text-align: center;
+   
+  }
+  .social li {
+  		list-style-type: none;
+  		display: inline;
+  }
+  .footer {
+  		padding-top: 10px;
+  }
+  .footer li {
+  		list-style-type: none;
+  		display: inline; 
+  }
+  .mainfoot {
+  		background-color: #343434;
+  		color: #fff;
+  		width: 100%;
+  		padding: 5%;
+  		margin-top: -10px;
+  }
+  .mainfoot li {
+  		list-style-type: none;
+  		text-decoration: none;
+  		font-size: 1.2em;
+  				
+  }
+  .mainfoot a {
+  		color: #f2f2f2;
+  }
+  .mainfoot li .fa {
+  		font-size: 1.2em;
+  }
+  .mainfoot button {
+  		background-color: #ED4913;
+  		color: #fff;
+  		border: #ED4913;
+  }
+  
+  .process li {
+  		list-style-type: none;
+  		font-size: 1.8em;
+  			
+  }
+  .test {
+  	text-align: center;
+  	padding-top: 30px;
+  	padding-bottom: 50px;
+  }
+  .betterway {
+  	background-color: #E8F2FB;
+  	text-align: center;
+  	width: 100%;
+  	padding: 30px 40px;
+  	margin-bottom: 0px;
+  }
+  .betterbox {
+  	padding: 40px 40px 20px;
+  } 
+  .betterbox img {
+  	background-color: #156EBE;
+  	border-radius: 50%;
+  	background-size: 100px 100px;
+  	padding: 15px;
+  	margin: 5px;
+  }
+  
+  .test .success  {
+  	color: blue;
+  }
+
+ .logo {
+  			padding-top: 30px;
+  			text-align: center;
+  }
+  h3 {
+  			text-align: left;
+  }
+  label {
+  			text-align: left;
+  }
+  .fa-phone {
+  			color: #39B44A;
+  			font-size: 2em;
+  			text-align: center;
+  }
+  .fa-check {
+  			color: #39B44A;
+  			font-size: 1.4em;
+  			text-align: left;
+  }
+  .phone {
+  			font-size: 1.7em;
+  }
+  .well {
+  			margin:15px;
+  			padding: 20px 40px;
+  			text-align: left;
+  }
+  .banner {
+        background-color: #000;
+        width: 100%;
+        background: url('ppa_banner.png') no-repeat;
+        background-size: cover;
+  }
+  .privacy {
+        padding-bottom: 30px;
+    
+  }
+  .company {
+        text-align: left;
+        color: blue;
+        font-size: 1.3em;
+  }
+  .testtext {
+        text-align: left;
+        font-size: 1.2em;
+  }
+  .test1 {
+        font-size: 1.5em;
+        padding: 20px 70px;
+  }
+  .test .row .row {
+        padding-left: 50px;
+  }
+  .process {
+        margin-top: -20px;
+  }
+  .nation {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+  } 
+  .nationbrand {
+        color: #39B44A;
+        font-size: 1.3em;
+  }
+  .nationhero {
+        font-size: 1.5em;
+        padding: 20px 70px;
+  }
+  .cta1hero {
+        font-size: 1.3em;
+        padding: 20px 90px;
+  }
+  .cta1 button {
+        color: #fff;
+        border-color: #fff;
+        border-width: 2px;
+        background-color: #156EBE;
+  }
+  .arrow {
+        color: red;
+        padding: 0 10px;
+        font-size: 1.3em;
+    
+  }
+  .success {
+        color: blue;
+        font-size: 1.7em;
+  }
+  .options {
+        width: 100%;
+        height: 600px;
+        background: url('learn_more.jpeg') no-repeat center center;
+        background-size: cover;
+  }
+  .options h1 {
+        position: relative;
+        margin-top: 50%;
+        color: #fff;
+  }
+  .options p {
+        font-size: 1.4em;
+        color: #fff;
+  }
+  .options button {
+        border-width: 2px;
+        border-color: #fff;
+        color: #fff;
+        text-align: center;
+        background-color: transparent;
+    
+  }
+  .opthero {
+        background-color: rgba(0,0,0,.4);
+        padding-left: 30px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        
+  }
+  .bizadv {
+        
+  }
+  .partner {
+        width: 100%;
+        height: 600px;
+        background: url('partner.jpeg') no-repeat center center;
+        background-size: cover;
+  }
+  .partner h1 {
+        position: relative;
+        margin-top: 50%;
+        color: #fff;    
+  }
+  .partner p {
+        font-size: 1.4em;
+        color: #fff;  
+  }
+  .partner button {
+        border-width: 2px;
+        border-color: #fff;
+        color: #fff;
+        text-align: center;
+        background-color: transparent;
+    
+  }
+  .parthero {
+          text-align: center;
+          padding: 50px 0 50px 20px;
+  }
+  .parthero h3 {
+          text-align: center;
+  }
+  .partco {
+          text-align: left;
+          padding: 0 15px;
+  }
+  .about {
+        width: 100%;
+        height: 600px;
+        background: url('about_us.jpeg') no-repeat center center;
+        background-size: cover;
+  }
+  .aboutus h1 {
+        text-align: center;  
+  }
+  .peertext {
+          font-size: 1.3em;
+  }
+  .aboutus {
+          padding: 50px 20px;
+          
+  }
+  .process button {
+          text-align: center;
+  }
+ 

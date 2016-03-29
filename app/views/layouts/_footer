@@ -1,0 +1,68 @@
+<!--Social Media--> 	
+  <div class="social">
+    <h3>Why Keep Us a Secret? SHARE us with your friends!</h3>
+  	<ul>
+  	  <li><%=link_to image_tag("Facebook.png"), "http://www.facebook.com/" %> </li>
+  		<li><%=link_to image_tag("Twitter.png"), "http://www.twitter.com/" %> </li>
+  		<li><%=link_to image_tag("Youtube.png"), "http://www.youtube.com/" %> </li>
+  		<li><%=link_to image_tag("Instagram.png"), "http://www.instagram.com/" %> </li>
+  		<li><%=link_to image_tag("Google-Plus.png"), "http://www.google-plus.com/" %> </li>
+  	</ul>
+  </div>
+  
+  <!--Footer-->
+  	<div class="mainfoot container">
+  	<div class="row">
+  	<div class="col-md-3 col-xs-12">
+  		<ul>
+  			<li class="foothead"><strong>FUNDING OPTIONS</strong></li><hr><br>
+  			<li><%= link_to 'Business Advances', options_path %></li>
+  			<li><%= link_to 'Real Estate Lending', options_path %></li>
+  			<li><%= link_to 'Commercial Funding', options_path %></li>
+  			<li><%= link_to 'Investor Programs', options_path %></li>
+  		</ul>
+  	</div>
+  	
+  	<div class="col-md-2 col-xs-12">
+  		<ul>
+  			<li class="foothead"><strong>ABOUT US</strong></li><hr><br>
+  			<li><%= link_to 'Our Process', about_path %></li>
+  			<li><%= link_to 'FAQ', about_path %></li>
+  			<li><%= link_to 'Press', about_path %></li>
+  			<li><%= link_to 'Blog', about_path %></li>
+  		</ul>
+  	</div>
+  	
+  	<div class="col-md-3 col-xs-12">
+  		<ul>
+  			<li class="foothead"><strong>PARTNER WITH US</strong></li><hr><br>
+  			<li><%= link_to 'Brokers', partner_path %></li>
+  			<li><%= link_to 'Banks & Professionals', partner_path %></li>
+  			<li><%= link_to 'Merchant Referrals', partner_path %></li>
+  			<li><%= link_to 'Affiliates', partner_path %></li>
+  		</ul>
+  	</div>
+  	
+  	<div class="col-md-4 col-xs-12">
+  		<ul>
+  			<li class="foothead"><strong>GET STARTED</strong></li><hr><br>
+  			<li><a href="#"><span class="fa fa-mobile">&nbsp;1-800-234-5678</span></a></li><br>
+  			<li><a href="#"><span class="fa fa-envelope-o">&nbsp;apply@peerpointadvance.com</span></a></li><br>
+  			<li><a href="#"><span class="fa fa-comment">&nbsp;Live Chat</span></a></li><br>
+  			<%= link_to '<button type="button" class="btn btn-lg">APPLY NOW</button>'.html_safe, new_application_path %>
+  		</ul>
+  	</div>
+  	
+  	</div>
+  	</div><!--close footer-->
+  
+  <!--Sub-Footer-->
+  	<footer class="footer container">
+  	<ul>
+  		<li>&copy; Copyright 2016 PeerPoint Advance | All Rights Reserved | </li>
+  		<li>All Funding is subject to final lender approval.</li>
+  		<li class="pull-right">&nbsp; &nbsp;<%= link_to 'Terms & Conditions'.html_safe, terms_and_conditions_path %></li>
+  		<li class="pull-right"><%= link_to 'Privacy Policy'.html_safe, privacy_policy_path %>&nbsp; &nbsp;|</li>
+  	</ul>
+  	</footer><!--close footer-->
+  

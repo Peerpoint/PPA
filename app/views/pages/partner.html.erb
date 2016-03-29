@@ -1,0 +1,65 @@
+
+<div class="partner container">
+    <div class="row">
+    <div class="col-md-5">
+        <div class="opthero">
+        <h1>Come Partner With Us</h1>
+        <p>We are specialists in finding the perfect<br>funding solution for your business.</p><br>
+        <%= link_to '<button type="button" class="btn btn-lg">Let&#39;s Work Together</button>'.html_safe, new_application_path %>
+        </div>
+    </div>
+</div><!--close row-->
+</div><!--container-->
+
+<div class="container parthero">
+    <div class="row">
+        <div class="col-md-3">
+            <%= image_tag("step-1.png", size: "120") %>
+            <h3>Brokers</h3>
+            <p class="partco">You're a leasing company, funding advisor or independent sales organization, interested in providing Peerpoint finaincing to your customer</p><br>
+            <%= link_to '<button type="button" class="btn btn-primary btn-sm">Learn More</button>'.html_safe, new_application_path %>
+        </div>
+        <div class="col-md-3">
+            <%= image_tag("step-2.png", size: "120") %>
+            <h3>Bank Professionals</h3>
+            <p class="partco">You're a leasing company, funding advisor or independent sales organization, interested in providing Peerpoint finaincing to your customer</p><br>
+            <%= link_to '<button type="button" class="btn btn-primary btn-sm">Learn More</button>'.html_safe, new_application_path %>
+        </div>
+        <div class="col-md-3">
+            <%= image_tag("step-3.png", size: "120") %>
+            <h3>Merchant Referral</h3>
+            <p class="partco">You're a leasing company, funding advisor or independent sales organization, interested in providing Peerpoint finaincing to your customer</p><br>
+            <%= link_to '<button type="button" class="btn btn-primary btn-sm">Learn More</button>'.html_safe, new_application_path %>
+        </div>
+        <div class="col-md-3">
+            <%= image_tag("step-3.png", size: "120") %>
+            <h3>Affiliates</h3>
+            <p class="partco">You're a leasing company, funding advisor or independent sales organization, interested in providing Peerpoint finaincing to your customer</p><br>
+            <%= link_to '<button type="button" class="btn btn-primary btn-sm">Learn More</button>'.html_safe, new_application_path %>
+        </div>
+        
+        
+    </div>
+    
+</div>
+
+
+<div class="cta3">
+  		<h2>Join The PeerPoint Team!</h2>
+  		<p>Whether you are looking to for a new funding partner or you want to grow your current business by giving your clients a funding mechanism to pay you, we are the best capital partner you can imagine. Complete this quick form and one of our Business Development Manager will work with you to find a place for you in the PeerPoint Nation.</p>
+  		<form>
+  			<div class="form-group">
+    			<input type="text" class="form-control" id="FullName" placeholder="Full Name">
+  			</div>
+  			<div class="form-group">
+    			<input type="email" class="form-control" id="Email1" placeholder="Email">
+  			</div>
+  			<div class="form-group">
+    			<input type="phone" class="form-control" id="Phone" placeholder="Phone">
+  			</div>
+  			<%= link_to '<button type="button" class="btn btn-warning btn-lg">APPLY NOW</button>'.html_safe, new_application_path %>
+		</form>
+  
+  	</div>
+
+ <%= render 'layouts/footer' %>

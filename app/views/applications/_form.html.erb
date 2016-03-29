@@ -1,0 +1,391 @@
+<%= form_for(@application) do |f| %>
+  <% if @application.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@application.errors.count, "error") %> prohibited this application from being saved:</h2>
+
+      <ul>
+      <% @application.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  
+  <div class="container ">
+    <h3>Step 1</h3>
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2">
+            <%= image_tag("one-green.svg", size: "35") %>
+            <p>About <br>Your Business</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("two-grey.svg", size: "35") %>
+            <p>More About<br> Your Business</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("three-grey.svg", size: "35") %>
+            <p>About<br> You</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("four-grey.svg", size: "35") %> 
+            <p>References</p>
+        </div>
+  </div><br><br>
+  
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+  <h4>Tell us a little about Your Company.</h4>
+  <div class="form-group">
+    <%= f.label :bizname, 'Legal Business Name' %>
+    <%= f.text_field :bizname, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :biznamedba, 'Business Name (if dba)' %>
+    <%= f.text_field :biznamedba, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bizadd, 'Business Address' %>
+    <%= f.text_field :bizadd, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bizfl, 'Floor/Suite' %>
+    <%= f.text_field :bizfl, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bizcity, 'Business City' %>
+    <%= f.text_field :bizcity, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bizstate, 'Business State' %>
+    <%= f.text_field :bizstate, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bizzip, 'Business Zip' %>
+    <%= f.text_field :bizzip, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bizphone, 'Business Phone' %>
+    <%= f.telephone_field :bizphone, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bizemail, 'Business Email' %>
+    <%= f.email_field :bizemail, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bizfax, 'Business Fax' %>
+    <%= f.telephone_field :bizfax, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bizurl, 'Company Website' %>
+    <%= f.text_field :bizurl, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :fundreq, 'How Much Are You Requesting?' %>
+    <%= f.text_field :fundreq, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.button :Continue, class:'form-control btn btn-success' %>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <h3>Step 2</h3>
+  
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2">
+            <%= image_tag("one-green.svg", size: "35") %>
+            <p>About <br>Your Business</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("two-green.svg", size: "35") %>
+            <p>More About<br> Your Business</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("three-grey.svg", size: "35") %>
+            <p>About<br> You</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("four-grey.svg", size: "35") %> 
+            <p>References</p>
+        </div>
+  </div><br><br>
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+  <h4>Tell us a little more about your business.</h4>
+  <div class="form-group">
+    <%= f.label :entity, 'Legal Structure' %><br>
+    <%= select_tag(:entity, options_for_select([['Corp', 1], ['Sole Proprietor', 2], ['LLC', 3], ['Partnership', 4]], :selected => params[:entity]), {prompt: "Select One..."}) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :cotype, 'Company Type' %><br>
+    <%= select_tag(:cotype, options_for_select([['Retail', 1], ['Restaurant', 2], ['Service', 3], ['Internet', 4]], :selected => params[:cotype]), {prompt: "Select One..."}) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bizloc, 'Business Location' %><br>
+    <%= select_tag(:bizloc, options_for_select([['Store Front', 1], ['Office', 2], ['Home', 3], ['Other', 4]], :selected => params[:bizloc]), {prompt: "Select One..."}) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :datestart, 'Date Business Stated' %><br>
+    <%= f.text_field :datestart, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :prodoffered, 'What Product or Service Do You Offer?' %><br>
+    <%= f.text_field :prodoffered, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :ticketsale, 'Average Ticket Sale' %><br>
+    <%= f.text_field :ticketsale, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :moccsales, 'Monthly Credit Card Sales' %><br>
+    <%= f.text_field :moccsales, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :mononccsales, 'Monthly Non-Credit Card Sales' %><br>
+    <%= f.text_field :mononccsales, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :postype, 'What Type of POS System Do You Use?' %><br>
+    <%= f.text_field :postype, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :poscontact, 'POS Company Contact' %><br>
+    <%= f.text_field :poscontact, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label 'POS Sales (Swiped vs Keyed)' %><br>
+    <%= f.label :posswipe, 'Swipe %' %><br>
+    <%= f.text_field :posswipe, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :poskey, 'Keyed %' %><br>
+    <%= f.text_field :poskey %>
+  </div>
+  <div class="form-group">
+    <%= f.label :fein, 'Federal Tax ID #' %><br>
+    <%= f.text_field :fein, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :amex, 'Amex Number' %><br>
+    <%= f.text_field :amex, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.button :Continue, class:'form-control btn btn-success' %>
+  </div>
+  <div class="form-group">
+    <%= f.button :Back, class:'form-control btn btn-success' %>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <h3>Step 3</h3>
+  
+  <div class="container">
+    <div class="row ">
+        <div class="col-xs-2 col-xs-offset-2">
+            <%= image_tag("one-green.svg", size: "35") %>
+            <p>About <br>Your Business</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("two-green.svg", size: "35") %>
+            <p>More About<br> Your Business</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("three-green.svg", size: "35") %>
+            <p>About<br> You</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("four-grey.svg", size: "35") %> 
+            <p>References</p>
+        </div>
+  </div><br><br>
+  
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+  <h4>Tell us a little bit about yourself.</h4>
+  <div class="form-group">
+    <%= f.label :fname, 'First Name' %><br>
+    <%= f.text_field :fname, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :lname, 'Last Name' %><br>
+    <%= f.text_field :lname, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :homeadd, 'Home Address' %><br>
+    <%= f.text_field :homeadd, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :homefl, 'Apt/Suite' %><br>
+    <%= f.text_field :homefl, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :homecity, 'City' %><br>
+    <%= f.text_field :homecity, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :homestate, 'State' %><br>
+    <%= f.text_field :homestate, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :homezip, 'Zip Code' %><br>
+    <%= f.text_field :homezip, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :homeemail, 'Personal Email' %><br>
+    <%= f.text_field :homeemail, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :homephone, 'Personal Phone' %><br>
+    <%= f.text_field :homephone, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :creditscore, 'Credit Score' %><br>
+    <%= f.text_field :creditscore, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :ownershipperc, '% of Ownership' %><br>
+    <%= f.text_field :ownershipperc, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :dob, 'Date of Birth' %><br>
+    <%= f.text_field :dob, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :ssn, 'SSN' %><br>
+    <%= f.text_field :ssn, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :dl, 'Drivers License' %><br>
+    <%= f.text_field :dl, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bk, 'Have You Ever Filed Bankruptcy?' %><br>
+    <%= f.text_field :bk, class: "form-control" %>
+  </div>
+   <div class="form-group">
+    <%= f.label :taxlien, 'Do You Have Tax Liens?' %><br>
+    <%= radio_button_tag(:taxlien, 'Yes') %>
+    <%= label_tag(:taxlien, 'yes') %>
+     <%= radio_button_tag(:taxlien, "No") %>
+     <%= label_tag(:taxlien, 'no') %>
+  </div>
+  <div class="form-group">
+    <%= f.label :priormca, 'Have You Ever Used A Merchant Cash Advance?' %><br>
+    <%= radio_button_tag(:priormca, 'Yes') %>
+    <%= label_tag(:priormca, 'yes') %>
+     <%= radio_button_tag(:priormca, "No") %>
+     <%= label_tag(:priormca, 'no') %>
+  </div>
+  <div class="form-group">
+    <%= f.label :mcaprovider, 'If Yes, List Your Previous Cash Advance Provider' %><br>
+    <%= f.text_field :mcaprovider, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.button :Continue, class:'form-control btn btn-success' %>
+  </div>
+  <div class="form-group">
+    <%= f.button :Back, class:'form-control btn btn-success' %>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <h3>Step 4</h3>
+  
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2">
+            <%= image_tag("one-green.svg", size: "35") %>
+            <p>About <br>Your Business</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("two-green.svg", size: "35") %>
+            <p>More About<br> Your Business</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("three-green.svg", size: "35") %>
+            <p>About<br> You</p>
+        </div>
+        <div class="col-xs-2">
+            <%= image_tag("four-green.svg", size: "35") %> 
+            <p>References</p>
+        </div>
+  </div><br><br>
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+  <h4>Lastly, we need a couple references</h4>
+  <div class="form-group">
+    <h4>Trade Reference #1</h4>
+    <%= f.label :ref1name, 'Name' %><br>
+    <%= f.text_field :ref1name, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :ref1phone, 'Phone' %><br>
+    <%= f.text_field :ref1phone, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <h4>Trade Reference #2</h4>
+    <%= f.label :ref2name, 'Name' %><br>
+    <%= f.text_field :ref2name, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :ref2phone, 'Phone' %><br>
+    <%= f.text_field :ref2phone, class: "form-control" %>
+  </div>
+  <div class="form-group">
+     <h4>Trade Reference #3</h4>
+    <%= f.label :ref3name, 'Name' %><br>
+    <%= f.text_field :ref3name, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :Phone, 'Phone' %><br>
+    <%= f.text_field :ref3phone, class: "form-control" %>
+  </div>
+  <div class="form-group">
+     <h4>Bank Reference</h4>
+    <%= f.label :bankrefname, 'Name' %><br>
+    <%= f.text_field :bankrefname, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bankrefphone, 'Phone' %><br>
+    <%= f.text_field :bankrefphone, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <h4>Landlord Mortgage Contact</h4>
+    <%= f.label :llmort, 'Name' %><br>
+    <%= f.text_field :llmort, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :llmortphone, 'Phone' %><br>
+    <%= f.text_field :llmortphone, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :rent, 'Business Rent/Mortgage Payment' %><br>
+    <%= f.text_field :rent, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :Is_your_company_curent_on_the_rent_mortgage?, 'Is Your Company Current on the Rent/Mortgage ?' %><br>
+    <%= radio_button_tag(:current, 'Yes') %>
+    <%= label_tag(:current, 'yes') %>
+     <%= radio_button_tag(:current, "No") %>
+     <%= label_tag(:current, 'no') %>
+    <%= f.text_field :current, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.button :Back, class:'form-control btn btn-success' %>
+  </div>
+  <div class="form-group">
+    <%= f.button :Finish, class:'form-control btn btn-success' %>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  
+<% end %>

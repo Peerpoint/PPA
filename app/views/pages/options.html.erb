@@ -1,0 +1,115 @@
+
+
+<div class="options container"> 
+<div class="row">
+    <div class="col-md-5 col-md-offset-7">
+        <div class="opthero">
+        <h1>Discover All of Our<br>Lending Options</h1>
+        <p>We are specialists in finding the perfect<br>funding solution for your business.</p><br>
+        <%= link_to '<button type="button" class="btn btn-lg">Do I Qualify?</button>'.html_safe, new_application_path %>
+        </div>
+    </div>
+</div><!--close row-->
+</div><!--container-->
+
+<div class="container parthero">
+    <div class="row">
+        <div class="col-md-3">
+            <%= image_tag("step-1.png", size: "120") %>
+            <h3>Business Advances</h3>
+            <p class="partco">You're a leasing company, funding advisor or independent sales organization, interested in providing Peerpoint finaincing to your customer</p><br>
+            <%= link_to '<button type="button" class="btn btn-primary btn-sm">Learn More</button>'.html_safe, new_application_path %>
+        </div>
+        <div class="col-md-3">
+            <%= image_tag("step-2.png", size: "120") %>
+            <h3>Real Estate Loans</h3>
+            <p class="partco">You're a leasing company, funding advisor or independent sales organization, interested in providing Peerpoint finaincing to your customer</p><br>
+            <%= link_to '<button type="button" class="btn btn-primary btn-sm">Learn More</button>'.html_safe, new_application_path %>
+        </div>
+        <div class="col-md-3">
+            <%= image_tag("step-3.png", size: "120") %>
+            <h3>Commercial Funding</h3>
+            <p class="partco">You're a leasing company, funding advisor or independent sales organization, interested in providing Peerpoint finaincing to your customer</p><br>
+            <%= link_to '<button type="button" class="btn btn-primary btn-sm">Learn More</button>'.html_safe, new_application_path %>
+        </div>
+        <div class="col-md-3">
+            <%= image_tag("step-3.png", size: "120") %>
+            <h3>Investor Programs</h3>
+            <p class="partco">You're a leasing company, funding advisor or independent sales organization, interested in providing Peerpoint finaincing to your customer</p><br>
+            <%= link_to '<button type="button" class="btn btn-primary btn-sm">Learn More</button>'.html_safe, new_application_path %>
+        </div>
+        
+        
+    </div>
+    
+</div>
+<div class="container">
+
+<div class="bizadv">
+    <div class="row">
+    <div class="col-md-6">
+        <h2>Business Advances</h2>
+    </div>
+    <div class="col-md-offset-6">
+    </div>
+    </div>
+</div><hr>
+
+<div class="reloan">
+    <div class="row">
+    <div class="col-md-6">
+        
+    </div>
+     <div class="col-md-offset-6">
+        <h2>Real Estate Loans</h2>
+    </div>
+    </div>
+</div><hr>
+
+<div class="commfund">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Commercial Funding</h2>
+        </div>
+        <div class="col-md-offset-6">
+            
+        </div>
+    
+    </div>
+</div><hr>
+
+<div class="ip">
+    
+    <div class="row">
+        <div class="col-md-6">
+            
+        </div>
+        <div class="col-md-offset-6">
+            <h2>Investor Programs</h2>
+        </div>
+        
+    </div>
+</div>
+
+</div><!--close container-->
+
+<div class="cta3">
+  		<h2>Let Us Create A Custom Funding Proposal For You</h2>
+  		<p>We know every situation is different.  Our funding specialists are expert problem solvers and bring years of experience to every funding situation.  Complete this quick form and we'll be able to give you an idea of what we can do to help you.</p>
+  		<form>
+  			<div class="form-group">
+    			<input type="text" class="form-control" id="FullName" placeholder="Full Name">
+  			</div>
+  			<div class="form-group">
+    			<input type="email" class="form-control" id="Email1" placeholder="Email">
+  			</div>
+  			<div class="form-group">
+    			<input type="phone" class="form-control" id="Phone" placeholder="Phone">
+  			</div>
+  			<%= link_to '<button type="button" class="btn btn-warning btn-lg">APPLY NOW</button>'.html_safe, new_application_path %>
+		</form>
+  
+  	</div>
+
+
+ <%= render 'layouts/footer' %>
