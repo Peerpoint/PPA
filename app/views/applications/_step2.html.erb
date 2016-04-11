@@ -1,0 +1,90 @@
+<h3>Step 2</h3>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-2">
+      <%= image_tag("one-green.svg", size: "35") %>
+      <p>About <br>Your Business</p>
+    </div>
+    <div class="col-xs-2">
+      <%= image_tag("two-green.svg", size: "35") %>
+      <p>More About<br> Your Business</p>
+    </div>
+    <div class="col-xs-2">
+      <%= image_tag("three-grey.svg", size: "35") %>
+      <p>About<br> You</p>
+    </div>
+    <div class="col-xs-2">
+      <%= image_tag("four-grey.svg", size: "35") %>
+      <p>References</p>
+    </div>
+  </div><br><br>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <h4>Tell us a little more about your business.</h4>
+      <div class="form-group">
+        <%= f.label :entity, 'Legal Structure' %><br>
+        <%= f.input :entity, label: false,  collection: [['Corp', 1], ['Sole Proprietor', 2], ['LLC', 3], ['Partnership', 4]], prompt: "Select One..." %>
+      </div>
+      <div class="form-group">
+        <%= f.label :cotype, 'Company Type' %><br>
+        <%= f.input :cotype, label:false,  collection: [['Retail', 1], ['Restaurant', 2], ['Service', 3], ['Internet', 4]], prompt: "Select One..." %>
+      </div>
+      <div class="form-group">
+        <%= f.label :bizloc, 'Business Location' %><br>
+        <%= f.input :bizloc, collection: [['Store Front', 1], ['Office', 2], ['Home', 3], ['Other', 4]], prompt: "Select One...", label:false %>
+      </div>
+      <div class="form-group">
+        <%= f.label :datestart, 'Date Business Stated' %><br>
+        <%= f.text_field :datestart, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :prodoffered, 'What Product or Service Do You Offer?' %><br>
+        <%= f.text_field :prodoffered, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :ticketsale, 'Average Ticket Sale' %><br>
+        <%= f.text_field :ticketsale, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :moccsales, 'Monthly Credit Card Sales' %><br>
+        <%= f.text_field :moccsales, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :mononccsales, 'Monthly Non-Credit Card Sales' %><br>
+        <%= f.text_field :mononccsales, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :postype, 'What Type of POS System Do You Use?' %><br>
+        <%= f.text_field :postype, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :poscontact, 'POS Company Contact' %><br>
+        <%= f.text_field :poscontact, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label 'POS Sales (Swiped vs Keyed)' %><br>
+        <%= f.label :posswipe, 'Swipe %' %><br>
+        <%= f.text_field :posswipe, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :poskey, 'Keyed %' %><br>
+        <%= f.text_field :poskey %>
+      </div>
+      <div class="form-group">
+        <%= f.label :fein, 'Federal Tax ID #' %><br>
+        <%= f.text_field :fein, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :amex, 'Amex Number' %><br>
+        <%= f.text_field :amex, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.submit :Continue, class:'form-control btn btn-success' %>
+      </div>
+      <div class="form-group">
+        <%= link_to :Back, "/applications/#{@application.id}/step1", class:'form-control btn btn-success' %>
+      </div>
+    </div>
+  </div>
+</div>

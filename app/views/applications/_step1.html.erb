@@ -1,0 +1,80 @@
+
+<h3>Step 1</h3>
+<div class="container ">
+
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-2">
+      <%= image_tag("one-green.svg", size: "35") %>
+      <p>About <br>Your Business</p>
+    </div>
+    <div class="col-xs-2">
+      <%= image_tag("two-grey.svg", size: "35") %>
+      <p>More About<br> Your Business</p>
+    </div>
+    <div class="col-xs-2">
+      <%= image_tag("three-grey.svg", size: "35") %>
+      <p>About<br> You</p>
+    </div>
+    <div class="col-xs-2">
+      <%= image_tag("four-grey.svg", size: "35") %>
+      <p>References</p>
+    </div>
+  </div><br><br>
+
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <h4>Tell us a little about Your Company.</h4>
+      <div class="form-group">
+        <%= f.label :bizname, 'Legal Business Name' %>
+        <%= f.text_field :bizname, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :biznamedba, 'Business Name (if dba)' %>
+        <%= f.text_field :biznamedba, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :bizadd, 'Business Address' %>
+        <%= f.text_field :bizadd, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :bizfl, 'Floor/Suite' %>
+        <%= f.text_field :bizfl, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :bizcity, 'Business City' %>
+        <%= f.text_field :bizcity, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :bizstate, 'Business State' %>
+        <%= f.text_field :bizstate, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :bizzip, 'Business Zip' %>
+        <%= f.text_field :bizzip, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :bizphone, 'Business Phone' %>
+        <%= f.telephone_field :bizphone, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :bizemail, 'Business Email' %>
+        <%= f.email_field :bizemail, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :bizfax, 'Business Fax' %>
+        <%= f.telephone_field :bizfax, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :bizurl, 'Company Website' %>
+        <%= f.text_field :bizurl, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :fundreq, 'How Much Are You Requesting?' %>
+        <%= f.text_field :fundreq, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.submit :Continue, class:'form-control btn btn-success' %>
+      </div>
+    </div>
+  </div>
+</div>

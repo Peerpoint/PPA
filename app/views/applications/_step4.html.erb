@@ -1,0 +1,92 @@
+
+<h3>Step 4</h3>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-2">
+      <%= image_tag("one-green.svg", size: "35") %>
+      <p>About <br>Your Business</p>
+    </div>
+    <div class="col-xs-2">
+      <%= image_tag("two-green.svg", size: "35") %>
+      <p>More About<br> Your Business</p>
+    </div>
+    <div class="col-xs-2">
+      <%= image_tag("three-green.svg", size: "35") %>
+      <p>About<br> You</p>
+    </div>
+    <div class="col-xs-2">
+      <%= image_tag("four-green.svg", size: "35") %>
+      <p>References</p>
+    </div>
+  </div><br><br>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <h4>Lastly, we need a couple references</h4>
+      <div class="form-group">
+        <h4>Trade Reference #1</h4>
+        <%= f.label :ref1name, 'Name' %><br>
+        <%= f.text_field :ref1name, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :ref1phone, 'Phone' %><br>
+        <%= f.text_field :ref1phone, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <h4>Trade Reference #2</h4>
+        <%= f.label :ref2name, 'Name' %><br>
+        <%= f.text_field :ref2name, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :ref2phone, 'Phone' %><br>
+        <%= f.text_field :ref2phone, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <h4>Trade Reference #3</h4>
+        <%= f.label :ref3name, 'Name' %><br>
+        <%= f.text_field :ref3name, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :Phone, 'Phone' %><br>
+        <%= f.text_field :ref3phone, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <h4>Bank Reference</h4>
+        <%= f.label :bankrefname, 'Name' %><br>
+        <%= f.text_field :bankrefname, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :bankrefphone, 'Phone' %><br>
+        <%= f.text_field :bankrefphone, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <h4>Landlord Mortgage Contact</h4>
+        <%= f.label :llmort, 'Name' %><br>
+        <%= f.text_field :llmort, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :llmortphone, 'Phone' %><br>
+        <%= f.text_field :llmortphone, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :rent, 'Business Rent/Mortgage Payment' %><br>
+        <%= f.text_field :rent, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :Is_your_company_curent_on_the_rent_mortgage?, 'Is Your Company Current on the Rent/Mortgage ?' %><br>
+        <%= f.collection_radio_buttons :current, [[true, 'Yes'] ,[false, 'No']], :first, :last %>
+        <%#= radio_button_tag(:current, 'Yes') %>
+        <%#= label_tag(:current, 'yes') %>
+        <%#= radio_button_tag(:current, "No") %>
+        <%#= label_tag(:current, 'no') %>
+        <%#= f.text_field :current, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= link_to :Back, "/applications/#{@application.id}/step3", class:'form-control btn btn-success' %>
+      </div>
+      <div class="form-group">
+        <%= f.submit :Finish, class:'form-control btn btn-success' %>
+      </div>
+    </div>
+  </div>
+</div>

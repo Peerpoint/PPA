@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  resources :applications
+  resources :applications do
+    member do
+      get :step1
+      get :step2
+      get :step3
+      get :step4
+    end
+  end
   root 'pages#home'
 
   get 'about' => 'pages#about'
