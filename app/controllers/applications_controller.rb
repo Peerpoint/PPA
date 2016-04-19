@@ -70,6 +70,11 @@ class ApplicationsController < ApplicationController
   def update
     respond_to do |format|
       if @application.update(application_params)
+        #if blank, send email because step 4 is finished. remove and false when SMTP creds are integrated
+        if application_params[:next_step].blank? and false
+          UserMailer.notify_feedback(@application).deliver_now
+        end
+
         format.html { redirect_to "/applications/#{@application.id}/#{application_params[:next_step]}", notice: 'Application was successfully updated.' }
         format.json { render :show, status: :ok, location: @application }
       else
